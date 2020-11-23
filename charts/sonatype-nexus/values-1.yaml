@@ -1,0 +1,15 @@
+# set host name env variables
+nexusProxy:
+  env:
+    nexusDockerHost: dev-docker.c3-e.com
+    nexusHttpHost: dev-nexus-1.c3-e.com
+
+# disable docker ingress
+ingressDocker:
+  enabled: false
+
+# disable docker-svc
+service:
+  name: docker-svc
+  enabled: false
+

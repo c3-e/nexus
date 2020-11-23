@@ -1,0 +1,10 @@
+{
+  "userId": "bofa",
+  "firstName": "bofa",
+  "lastName": "bofa",
+  "emailAddress": "bofa@bofa.com",
+  "password": "bofa123",
+  "readOnly": true,
+  "status": "active",
+  "roles": ["nx-anonymous"]
+}

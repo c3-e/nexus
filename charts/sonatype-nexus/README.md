@@ -1,5 +1,12 @@
 # Nexus
 
+## C3 Customization
+
+The chart and default values have been customized to use two Helm releases for an HA configuration as a docker proxy.
+
+- Look at install.sh to see how to install two helm releases and put them into an HA.
+- Look at configure.sh to see how to configure a proxy configuration.
+
 [Nexus OSS](https://www.sonatype.com/nexus-repository-oss) is a free open source repository manager. It supports a wide range of package formats and it's used by hundreds of tech companies.
 
 ## Introduction

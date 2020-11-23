@@ -20,16 +20,8 @@ spec:
       http:
         paths:
           - backend:
-            {{- if .Values.nexusProxy.svcName }}
-              serviceName: {{ .Values.nexusProxy.svcName }}
-            {{- else }}
-              serviceName: {{ template "nexus.fullname" . }}
-            {{- end }}
-            {{- if .Values.nexusProxy.enabled }}
-              servicePort: {{ .Values.nexusProxy.port }}
-            {{- else }}
+              serviceName: docker-svc
               servicePort: {{ .Values.nexus.dockerPort }}
-            {{- end }}
             path: {{ .Values.ingress.path }}
   {{- end }}
   {{- with .Values.ingressDocker.rules }}
