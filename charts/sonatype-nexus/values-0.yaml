@@ -1,4 +1,9 @@
+# set host name env variables
 nexusProxy:
   env:
     nexusDockerHost: dev-docker.c3-e.com
     nexusHttpHost: dev-nexus-0.c3-e.com
+
+# set the storage size for docker image cache
+persistence:
+  storageSize: 80Gi
